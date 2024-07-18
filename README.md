@@ -26,8 +26,8 @@
 The objective of this project is to perform EXPLORATORY DATA ANALYSIS (EDA) on a IRIS dataset containing Sepal,Petal of their length and width. The aim is to uncover insights into correlations,and outlier through visualization.
 
 ### Key Activities
-- ** Data visualization:**Creating visualization to understand data distribution,trends and relationships.
-- ** Correlations Analysis:**Identifying correlations between populations figures across different length and width.
+- **Data visualization:**Creating visualization to understand data distribution,trends and relationships.
+- **Correlations Analysis:**Identifying correlations between populations figures across different length and width.
 
  ### Technologies Used
  - **Python:** The primary programming language for data analysis.
