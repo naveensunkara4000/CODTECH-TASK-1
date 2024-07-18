@@ -30,10 +30,10 @@ The objective of this project is to perform EXPLORATORY DATA ANALYSIS (EDA) on a
 - ** Correlations Analysis:**Identifying correlations between populations figures across different length and width.
 
  ### Technologies Used
- - ** Python:** The primary programming language for data analysis.
- - ** Pandas:** Used for Data manipulation and analysis.
- - ** Matplotlib:** Employed for creating static,animated and interactive visualizations.
- -  ** Seaborn :** Utilized for making statistical graphics that are informative and attractive. 
+ - **Python:** The primary programming language for data analysis.
+ - **Pandas:** Used for Data manipulation and analysis.
+ - **Matplotlib:** Employed for creating static,animated and interactive visualizations.
+ - **Seaborn :** Utilized for making statistical graphics that are informative and attractive. 
 
 
 
