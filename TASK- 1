@@ -1,0 +1,60 @@
+/* Importing libraries */
+import seaborn as sns
+import pandas as pd
+/* loading dataset */
+iris = sns.load_dataset('iris')
+iris.head()
+/*printing shape,dtypes,describe */
+print("Shape of the dataset:", iris.shape)
+print("\nData types:\n", iris.dtypes)
+print("\nSummary statistics:\n", iris.describe())
+/* importing additional libraries */
+import seaborn as sns
+import matplotlib.pyplot as plt
+/* Pairplot */
+sns.pairplot(iris, hue='species')
+plt.show()
+/* Histograms */
+iris.hist(bins=20, figsize=(10, 10), edgecolor='black')
+plt.show()
+/* Heatmap */
+numerical_iris = iris.select_dtypes(include=['float64'])
+correlation_matrix = numerical_iris.corr()
+print(correlation_matrix)
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+plt.show()
+/* Boxplots */
+plt.figure(figsize=(12, 8))
+sns.boxplot(data=iris, orient="h", palette="Set2")
+plt.show()
+/* Correlation matrix */
+numerical_iris = iris.select_dtypes(include=['float64', 'int64'])
+/* Include both float and integer columns */
+correlation_matrix = numerical_iris.corr()
+print("\nCorrelation matrix:\n", correlation_matrix)
+/* Scatter plot */
+plt.scatter(iris["petal_length"],iris["petal_width"], color = "red")
+plt.title("Scatter Plot for bivariate analysis")
+plt.xlabel("petal length")
+plt.ylabel("petal width")
+plt.show()
+/* Bar chart */
+sns.barplot(x="species", y="sepal_length", data=iris)
+plt.show()
+/* Pie chart */
+plt.pie(iris["species"].value_counts(), labels=iris["species"].unique(), autopct='%1.1f%%')
+plt.show()
+/* Countplot */
+sns.countplot(x="species", data=iris)
+plt.show()
+/* Distplot */
+sns.distplot(iris["sepal_length"])
+plt.show()
+/* Jointplot */
+sns.jointplot(x="sepal_length", y="sepal_width", data=iris)
+plt.show()
+/* Grids, Style,and Color */
+sns.set_style("whitegrid")
+sns.FacetGrid(iris, hue="species", height=4).map(plt.scatter, "sepal_length", "sepal_width").add_legend()
+plt.show()
